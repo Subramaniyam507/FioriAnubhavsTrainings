@@ -20,6 +20,16 @@ sap.ui.define([
                 alert(sVal);
                 oInp.setValue("Hey it was fun")
             }
-        }
+        },
+
+		onClickButton: function(oEvent) {
+			var oView = this.getView();
+            var onInp = oView.byId("idInputOne");
+            var sValue = onInp.getValue();
+            alert(sValue)
+		},
+
 	});
+
+
 });

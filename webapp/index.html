@@ -10,17 +10,17 @@
 
 
              <script>
-                var oSpidy = new sap.m.Button("idSpidy",{
-                    text:"Click Me !",
-                    press: function (){
-                        $("#idSpidy").fadeOut(2000);
-                    }
-                })
+                var oView = new sap.ui.view({
+                    viewName:"mickey.view.Main",
+                    id:'xmlView',
+                    type:'XML'
 
-                oSpidy.placeAt('zkas')
+                }) 
+                oView.placeAt("xml")
              </script>
 </head>
 <body class="sapUiBody">
     <div id="zkas"></div>
+    <div id="xml"></div>
 </body>
 </html>
