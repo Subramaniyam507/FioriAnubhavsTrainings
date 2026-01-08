@@ -10,7 +10,7 @@
 		  <Input width="20%" id="idEmpid" value="{/empStr/empId}"></Input>
 
 		  <Label text="Emp name"></Label>
-		  <Input width="20%" id="idEmpName"></Input>
+		  <Input width="20%" id="idEmpName" value="{path:'/empStr/empName'}"></Input>
 
 		  <Label text="Salary"></Label>
 		  <Input width="20%" id="idSal"></Input>

@@ -16,7 +16,7 @@ sap.ui.define([
                     "empName": "Anubhav",
                     "salary": 9000,
                     "currency": "USD",
-                    "smoker":false,
+                    "smoker":true,
 
                 },
                 "empTable":[
@@ -48,6 +48,13 @@ sap.ui.define([
             }
             oModel.setData(data)
             sap.ui.getCore().setModel(oModel)
+
+            var oSalfield = this.getView().byId("idSal");
+            oSalfield.bindValue("/empStr/salary");
+
+            var oCurrfield = this.getView().byId("idCurr");
+            oCurrfield.bindProperty("value","/empStr/currency")
+             this.getView().byId("idSmoker").bindProperty("selected","/empStr/smoker")
         },
         myCode: function () {
 
