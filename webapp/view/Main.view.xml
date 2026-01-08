@@ -4,10 +4,10 @@
 	xmlns:core="sap.ui.core" displayBlock="true" height="100%" busyIndicatorDelay="0"
 	xmlns:form="sap.ui.layout.form">
 
-	<form:SimpleForm>
+	<form:SimpleForm editable="true">
 		<form:content>
           <Label text="Emp id"></Label>
-		  <Input width="20%" id="idEmpid"></Input>
+		  <Input width="20%" id="idEmpid" value="{/empStr/empId}"></Input>
 
 		  <Label text="Emp name"></Label>
 		  <Input width="20%" id="idEmpName"></Input>
@@ -20,6 +20,8 @@
            
 		   <Label text="Smoker"></Label>
 		  <CheckBox width="20%" id="idSmoker"></CheckBox>
+		  <Label/>
+		  <Button text="Print Data" press="onPrint"></Button>
 		  
 			  
 		 
